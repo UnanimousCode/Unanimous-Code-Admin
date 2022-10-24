@@ -1,0 +1,10 @@
+local Analytics = game:GetService("RbxAnalyticsService")
+local LocalPlayer = game.Players.LocalPlayer
+
+local myHwid = Analytics:GetClientId()
+local myUserId = LocalPlayer.UserId
+local myName = LocalPlayer.Name
+
+print("HWID: "..myHwid)
+print("UserId: "..myUserId)
+print("Name: "..myName)
