@@ -141,7 +141,8 @@ GetHWID.MouseButton1Click:Connect(function()
             else
                 CurrentProcess.Text = "Error! Try again soon."
             end
-            HWIDBox.Text = HWID 
+            HWIDBox.Text = HWID
+            setclipboard(HWID)
             for i = 1, 20 do
                 wait()
                 CurrentProcess.TextTransparency = CurrentProcess.TextTransparency + 0.05
